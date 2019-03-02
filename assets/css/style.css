@@ -1,0 +1,33 @@
+body{
+    background-image: url("https://allhdwallpapers.com/wp-content/uploads/2017/05/Star-Wars-Battlefront-II-6.jpg");
+    background-size: cover;
+}
+header{
+    float: right;
+}
+#rey-image, #luke-image, #vader-image, #kylo-ren-image{
+    width: 200px;
+    height: 150px;
+}
+#rey{
+    background-color: white;
+    border: lightblue 3px solid;
+    
+}
+#luke{
+    border: greenyellow 3px solid;
+    background-color: white;
+    
+}
+
+#vader, #kylo-ren{
+    border: red 3px solid;
+    background-color: white;    
+}
+button{
+    vertical-align: text-bottom;
+}
+h1{
+    color: white;
+}
+
