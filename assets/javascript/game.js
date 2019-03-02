@@ -9,72 +9,71 @@ $(document).ready(function () {
     var characters = [{
 
         Name: "Rey",
-        abiliteis =[$("#rey"), 220, 15],
+        abiliteis :[$("#rey"), 220, 15],
     },
     {
 
         Name: "Luke",
-        abiliteis =[$("#luke"), 190, 20],
+        abiliteis :[$("#luke"), 190, 20],
     },
     {
         Name: "Darth Vader",
-        abiliteis =[$("#vader"), 250, 10],
+        abiliteis :[$("#vader"), 250, 10],
     },
     {
         Name: "Kylo Ren",
-        abiliteis =[$("#kylo-ren"), 170, 25]
+        abiliteis :[$("#kylo-ren"), 170, 25]
 
     }];
     var userCharacter = [];
     var enemies = [];
     var opponent = [];
 
-    console.log(characters[1].abiliteis[1]);
+    // console.log(characters[0].abiliteis[1]);
 
     // starting of the star wars game
     function startMyGame() {
         UserCharacterChosen = false;
         EnemySelected = false;
         OpponentSelected = false;
-        characters = {
-            reyName: "Rey",
-            reyHP: 220,
-            reyAttack: 15,
+        characters = [{
 
-
-            lukeName: "Luke",
-            lukeHP: 190,
-            lukeAttack: 20,
-
-
-            vaderName: "Darth Vader",
-            vaderHP: 250,
-            vaderAttack: 10,
-
-
-            kyloRenName: "Kylo Ren",
-            kyloRenHP: 170,
-            kyloRenAttack: 25
-        };
+            Name: "Rey",
+            abiliteis :[$("#rey"), 220, 15],
+        },
+        {
+    
+            Name: "Luke",
+            abiliteis :[$("#luke"), 190, 20],
+        },
+        {
+            Name: "Darth Vader",
+            abiliteis :[$("#vader"), 250, 10],
+        },
+        {
+            Name: "Kylo Ren",
+            abiliteis :[$("#kylo-ren"), 170, 25]
+    
+        }];
 
     }
 
 
     $(".btn").on("click", function userSelection() {
         if (!UserCharacterChosen) {
-            characters
             $("#user-choice").append(this);
             UserCharacterChosen = true;
             $("#enemies").append($("#character-display"));
+            EnemySelected=true;
 
-        } else if (!OpponentSelected) {
+        } else if (!OpponentSelected&&UserCharacterChosen) {
             $("#opponent").append(this);
             OpponentSelected = true;
         };
 
     });
 
-
+    
     $("#attack-button").on("click", function battle() {
         if (OpponentSelected) {
             for (attackStrength = 0; attackStrength < userAttack.length; attackStrength++) {
