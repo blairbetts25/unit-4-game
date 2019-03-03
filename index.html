@@ -17,30 +17,34 @@
         <!-- <img src="https://lumiere-a.akamaihd.net/v1/images/image_a29b079a.jpeg?height=354&region=0%2C0%2C629%2C354&width=630" alt="Star" class="star"> -->
 
     </header>
-    <div id="character-display">
-        <button type="button" class="btn" id="rey">
-            <div>REY</div>
+    <div id="eniemes-defeated"></div>
+    <h1 id="direction">Pick Your Character</h1>
+    </div>
+    <div id="character-display"> 
+        <button type="button" class="btn jedi" id="rey">
+            <div class="name">Rey</div>
             <img src="https://www.shefinds.com/files/2018/07/rey-the-last-jedi-costume.jpg" id="rey-image">
-            <div class="hp">HP 220</div>
+            <div class="hp"></div>
         </button>
-        <button type="button" class="btn" id="luke">
-            <div>LUKE SKYWALKER</div>
+        <button type="button" class="btn jedi" id="luke">
+            <div class="name">Luke</div>
             <img src="https://d12nzqv8y4sum3.cloudfront.net/blog/2018-10-23/skywalker-e0e7cc07.jpg" id="luke-image">
-            <div class="hp">HP 190</div>
+            <div class="hp"></div>
         </button>
-        <button type="button" class="btn" id="vader">
-            <div>DARTH VADER</div>
+        <button type="button"class="btn jedi" id="vader">
+            <div class="name">Darth Vader</div>
             <img src="https://aa1a5178aef33568e9c4-a77ea51e8d8892c1eb8348eb6b3663f6.ssl.cf5.rackcdn.com/p/full/85600c5f-77e0-4d24-b2f5-8e442b8b3625.jpg"
                 id="vader-image">
-            <div class="hp">HP 250</div>
+                <div class="hp"></div>
         </button>
-        <button type="button" class="btn" id="kylo-ren">
-            <div>KYLO-REN</div>
+        <button type="button" class="btn jedi" id="kylo-ren">
+            <div class="name">Kylo Ren</div>
             <img src="http://s1.1zoom.me/big0/933/Warriors_Star_Wars_The_Last_Jedi_Kylo_Ren_Adam_537764_1280x1024.jpg"
                 id="kylo-ren-image">
-            <div class="hp">HP 170</div>
+            <div class="hp"></div>
         </button>
     </div>
+    
     <div id="user-choice">
         <h1>User Choice</h1>
     </div>
@@ -48,10 +52,13 @@
     <div id="enemies">
         <h1>Enemies To FIght</h1>
     </div>
+    <div id="reset-button"><button type="button" class="btn btn-danger">Reset</button></div>
     <div id="attack-button"><button type="button" class="btn btn-light">Attack</button></div>
     <div id="opponent">
         <h1>Opponent</h1>
     </div>
+    <div id="result-user"></div>
+    <div id="result-opponent"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
