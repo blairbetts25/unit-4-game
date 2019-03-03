@@ -30,5 +30,8 @@ button{
 h1,h2{
     color: white;
 }
-
+#direction h1{
+color: black;
+margin-left: 100px;
+}
 
